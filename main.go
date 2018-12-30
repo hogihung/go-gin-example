@@ -7,17 +7,23 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func main() {
-	fmt.Println("Spinning up server.....")
-	router := gin.Default()
+var router *gin.Engine
 
+func main() {
+	fmt.Println("Spinning up Nimbulus Meta Server.....")
+	router = gin.Default()
+
+	initializeRoutes()
+
+	router.Run()
+}
+
+func initializeRoutes() {
 	router.GET("/hosts", hostIndex)
 	router.POST("/hosts", hostCreate)
 	router.PUT("/hosts/:id", hostUpdate)
 	router.PATCH("/hosts/:id", hostUpdate)
 	router.DELETE("/hosts/:id", hostDelete)
-
-	router.Run()
 }
 
 func hostIndex(c *gin.Context) {
