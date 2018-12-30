@@ -33,5 +33,5 @@ func HostUpdate(c *gin.Context) {
 
 // HostDelete used to remove a host
 func HostDelete(c *gin.Context) {
-	c.String(http.StatusOK, "Called HxostDelete")
+	c.String(http.StatusOK, "Called HostDelete")
 }

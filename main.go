@@ -14,6 +14,7 @@ func main() {
 	router = gin.Default()
 
 	routes.InitializeHostRoutes(router)
+	routes.InitializePodRoutes(router)
 
 	router.Run()
 }
