@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/hogihung/gin-example/controllers"
+	"github.com/hogihung/go-gin-example/controllers"
 )
 
 // InitializePodRoutes use to initialize routes for managing a pod resource

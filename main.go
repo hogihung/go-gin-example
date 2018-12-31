@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	"github.com/hogihung/gin-example/routes"
+	"github.com/hogihung/go-gin-example/routes"
 )
 
 var router *gin.Engine
