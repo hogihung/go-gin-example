@@ -15,6 +15,7 @@ func main() {
 
 	routes.InitializeHostRoutes(router)
 	routes.InitializePodRoutes(router)
+	routes.InitializeServerSaveRoutes(router)
 
 	router.Run()
 }
